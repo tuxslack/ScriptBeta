@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # 
 # Autor: Fernando Souza
 #        Sidnei Serra
