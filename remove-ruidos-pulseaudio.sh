@@ -218,7 +218,13 @@ then
 #
 # Gnome, KDE:
 #
+#
 # $HOME/.config/autostart/
+#
+# ou
+#
+# /etc/xdg/autostart
+
 
 echo "[Desktop Entry]
 Encoding=UTF-8
