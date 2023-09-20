@@ -12,9 +12,9 @@ Os scripts passados nesta face serão enviados para o repositório de scripts es
 
 Você pode executar o arquivo assim:
 
-$ chmod +x nome_do_arquivo.sh
+`$ chmod +x nome_do_arquivo.sh`
 
-$ ./nome_do_arquivo.sh
+`$ ./nome_do_arquivo.sh`
 
 
 ## 🤔 Como contribuir
@@ -32,7 +32,7 @@ https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#o
 
 -->
 
-**Script:** remove-ruidos-pulseaudio.sh
+**Script:** [remove-ruidos-pulseaudio.sh](https://raw.githubusercontent.com/tuxslack/ScriptBeta/slackware/remove-ruidos-pulseaudio.sh) .
 
 [![Watch the video](https://img.youtube.com/vi/jwOvy-Tw2rg/maxresdefault.jpg)](https://www.youtube.com/embed/jwOvy-Tw2rg)
 
