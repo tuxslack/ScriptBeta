@@ -37,5 +37,7 @@ https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#o
 [![Watch the video](https://img.youtube.com/vi/jwOvy-Tw2rg/maxresdefault.jpg)](https://www.youtube.com/embed/jwOvy-Tw2rg)
 
 
+### Extrai, gera e lista pacote .xbps no Void Linux
 
+**Script:** [pacote-xbps.sh](https://github.com/tuxslack/ScriptBeta/blob/master/pacote-xbps.sh) .
 
