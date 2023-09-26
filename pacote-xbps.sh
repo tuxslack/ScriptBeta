@@ -16,6 +16,7 @@
 # http://smokey01.com/yad/
 # https://pkgs.alpinelinux.org/contents?branch=edge&name=xbps&arch=x86_64&repo=community
 # https://cjungmann.github.io/yaddemo/docs/yadbuttons.html
+# https://www.cyberciti.biz/faq/bash-while-loop/
 
 
 
@@ -539,6 +540,12 @@ case "$1" in
 
 -gtk)
 
+
+# Inicio do laço de repetição - While
+
+while :
+do
+
 # yad --center  --button=gtk-floppy:0 --button=gtk-preferences:0 --button=gtk-info:0 
 
 yad --center  --title="$titulo" --borders=20 \
@@ -546,16 +553,25 @@ yad --center  --title="$titulo" --borders=20 \
     --button="Listar":3 \
     --button="Gerar":2 \
     --button="Ajuda":1 \
-    --button="Exit" 2> /dev/null
+    --button="Exit":4 2> /dev/null
 
 case $? in
-   1) $(basename "$0") -h ;;
    0) $(basename "$0") -e ;;
+   1) $(basename "$0") -h ;;
    2) $(basename "$0") -g ;;
-   3) $(basename "$0") -l ;;   
+   3) $(basename "$0") -l ;;
+   4) break ;;  
 esac
-    
+  
+  
+done
+
+
+# Fim do laço de repetição - While
+  
+
 ;;
+
 
 
 -l | --listar)
@@ -565,17 +581,20 @@ listar
 ;;
 
 
+
 -e | --extrair)
 
 extrair "$2"
 
 ;;
 
+
 -g | --gerar | --empacotar)
 
 gerar
 
 ;;
+
 
 -h | --help)
 
@@ -585,6 +604,7 @@ echo "$MENSAGEM_USO" | yad --center --title="$titulo" --text-info --fontname "mo
 exit
 
 ;;
+
 
 -V | --version)
 	
@@ -597,6 +617,7 @@ exit
 	
 	exit 
 ;;
+
 
 *)
 
